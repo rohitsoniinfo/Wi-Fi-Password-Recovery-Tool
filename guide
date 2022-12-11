@@ -1,0 +1,18 @@
+for running the wifi attack
+you need wifi card with monitor mode and packet injection 
+and kali linux machine or any other linux machine.
+
+tools which are used in this 
+aircrack-ng 
+
+
+1. run the preAutomate.sh and identify the target and note the channel number(under ch) and bssid(under bssid)
+here we are getting the handshake.
+./preAutomate.sh
+2. use CTRL+C to quit.
+3. run the postAutomate.sh and deauthenticate the device
+./postAutomate.sh
+4. this is the final step and now you need to run attack.sh and here you get your password.
+./attack.sh
+
+Happy Hacking! :)
