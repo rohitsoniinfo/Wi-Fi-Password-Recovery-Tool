@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# run this script for installing driver for Archer T2U Plus -> 
+sudo apt install realtek-rtl88xxau-dkm
+
+# iwconfig -> for checking the driver 
+
+# sudo airmon-ng check kill -> for kill the process that can create problem with the operation
+
+# sudo aireplay-ng --test wlan0
+# sudo airodump-ng --band a wlan0  -> for 5ghz networks 
+# sudo airodump-ng --band bg wlan0 -> for 2.5ghz networks
+
