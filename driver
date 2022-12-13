@@ -2,7 +2,7 @@
 
 # run this script for installing driver for Archer T2U Plus -> 
 sudo apt install realtek-rtl88xxau-dkm
-
+sudo apt install aircrack-ng 
 # iwconfig -> for checking the driver 
 
 # sudo airmon-ng check kill -> for kill the process that can create problem with the operation
