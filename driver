@@ -1,15 +1,33 @@
 #!/bin/bash
 
-# run this script for installing driver for Archer T2U Plus -> 
+# This script installs the driver for the Archer T2U Plus WiFi adapter and sets up some useful tools for WiFi network analysis.
+
+# Step 1: Update the package list and upgrade existing packages
 sudo apt-get update
 sudo apt-get upgrade
+
+# Step 2: Install the realtek-rtl88xxau-dkms driver
 sudo apt install realtek-rtl88xxau-dkms
-sudo apt install aircrack-ng 
-# iwconfig -> for checking the driver 
 
-# sudo airmon-ng check kill -> for kill the process that can create problem with the operation
+# Step 3: Install aircrack-ng for WiFi analysis and hacking
+sudo apt install aircrack-ng
 
+# Step 4: Check the wireless network interfaces and their configurations.
+# Use the following command:
+# iwconfig
+
+# Step 5: Kill processes that can interfere with WiFi operations.
+# Use the following command:
+# sudo airmon-ng check kill
+
+# Step 6: Test the wireless card for packet injection capability.
+# Use the following command:
 # sudo aireplay-ng --test wlan0
-# sudo airodump-ng --band a wlan0  -> for 5ghz networks 
-# sudo airodump-ng --band bg wlan0 -> for 2.5ghz networks
 
+# Step 7: Monitor 5GHz networks.
+# Use the following command:
+# sudo airodump-ng --band a wlan0
+
+# Step 8: Monitor 2.4GHz networks.
+# Use the following command:
+# sudo airodump-ng --band bg wlan0
