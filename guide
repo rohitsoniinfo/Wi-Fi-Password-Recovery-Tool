@@ -1,18 +1,52 @@
-for running the wifi attack
-you need wifi card with monitor mode and packet injection 
-and kali linux machine or any other linux machine.
+Project Title: WiFi Attack and Password Recovery
 
-tools which are used in this 
-aircrack-ng 
+Project Description:
 
+In this project, we will explore the process of conducting a WiFi attack and recovering a password using a combination of hardware and software tools. This project is designed for educational purposes to better understand the vulnerabilities of WiFi networks and the importance of securing them.
 
-1. run the preAutomate.sh and identify the target and note the channel number(under ch) and bssid(under bssid)
-here we are getting the handshake.
+Requirements:
+
+A WiFi card with monitor mode and packet injection capability.
+A Linux machine, preferably Kali Linux, or any other Linux distribution.
+Tools Used:
+
+Aircrack-ng
+Project Steps:
+
+Step 1: Initial Setup
+
+Ensure you have a WiFi card that supports monitor mode and packet injection.
+Set up a Linux machine (Kali Linux is recommended) with the necessary drivers and software installed.
+Step 2: Pre-Automation
+
+Run the "preAutomate.sh" script.
+The script will help you identify the target WiFi network.
+Note down the channel number (under "ch") and BSSID (under "bssid").
+This step is crucial as it allows you to capture the handshake required for the attack.
+bash
+Copy code
 ./preAutomate.sh
-2. use CTRL+C to quit.
-3. run the postAutomate.sh and deauthenticate the device
+Step 3: Capture Handshake
+
+Use CTRL+C to exit the "preAutomate.sh" script once you have identified the target and captured the handshake.
+Step 4: Deauthenticate Devices
+
+Run the "postAutomate.sh" script.
+This script sends deauthentication packets to devices connected to the target WiFi network, forcing them to disconnect temporarily.
+bash
+Copy code
 ./postAutomate.sh
-4. this is the final step and now you need to run attack.sh and here you get your password.
+Step 5: Password Recovery
+
+Run the "attack.sh" script.
+This script launches the attack to crack the WiFi password using the captured handshake and other techniques.
+Be patient, as the time required for this step may vary depending on the complexity of the password.
+bash
+Copy code
 ./attack.sh
+Step 6: Password Recovery
+
+After successfully running the "attack.sh" script, you should have the WiFi password.
+Note: This project is intended for educational purposes only. It's essential to obtain proper authorization before attempting any WiFi attacks. Unauthorized access to computer networks is illegal and unethical.
 
 Happy Hacking! :)
