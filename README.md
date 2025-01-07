@@ -1,7 +1,7 @@
-# WiFi Attack and Password Recovery Project
+# HandshakeHunter
 
 ## Overview
-
+WiFi Attack and Password Recovery Project
 This project is designed for educational purposes to demonstrate the vulnerabilities of WiFi networks and the importance of securing them. It involves conducting a WiFi attack and recovering a password using specific hardware and software tools. Please note that this project should only be used in controlled environments with proper authorization.
 
 ## Requirements
